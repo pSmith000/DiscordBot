@@ -22,10 +22,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('guildCreate', guild => {
-  guild.systemChannel.send("Thanks for inviting me!");
-});
-
 client.on(Events.MessageCreate, message => {
 
   if (!message.content.startsWith(prefix) || message.author.bot) 
@@ -43,4 +39,4 @@ client.on(Events.MessageCreate, message => {
 })
 
 //this line must be at the very end
-client.login("MTIwNDkwODUxNDI3MTU1OTc2MQ.GJ383Z.HxzL4vTGZnjhRZpOfMaqSJQdssK94aRdrMLYAQ"); //signs the bot in with token
+client.login("Token Goes Here"); //signs the bot in with token
